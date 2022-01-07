@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script src="./node_modules/sinon/pkg/sinon.js"></script>
+<script>
+    var sinon = require("sinon");
+  // Access the `sinon` global...
+</script>
+<script type="module">
+    import sinon from "./node_modules/sinon/pkg/sinon-esm.js";
+    function once(fn) {
+  var returnValue,
+    called = false;
+  return function () {
+    if (!called) {
+      called = true;
+      returnValue = fn.apply(this, arguments);
+    }
+    return returnValue;
+  };
+}
+it("calls the original function", function () {
+  var callback = sinon.fake();
+  var proxy = once(callback);
+
+  proxy();
+
+  assert(callback.called);
+});
+it("calls the original function only once", function () {
+  var callback = sinon.fake();
+  var proxy = once(callback);
+
+  proxy();
+  proxy();
+
+  assert(callback.calledOnce);
+  // ...or:
+  // assert.equals(callback.callCount, 1);
+});
+it("calls original function with right this and args", function () {
+  var callback = sinon.fake();
+  var proxy = once(callback);
+  var obj = {};
+
+  proxy.call(obj, 1, 2, 3);
+
+  assert(callback.calledOn(obj));
+  assert(callback.calledWith(1, 2, 3));
+});
+it("calls original function with right this and args", function () {
+  var callback = sinon.fake();
+  var proxy = once(callback);
+  var obj = {};
+
+  proxy.call(obj, 1, 2, 3);
+
+  assert(callback.calledOn(obj));
+  assert(callback.calledWith(1, 2, 3));
+});
+it("returns the return value from the original function", function () {
+  var callback = sinon.fake.returns(42);
+  var proxy = once(callback);
+
+  assert.equals(proxy(), 42);
+});
+after(function () {
+  sinon.restore();
+});
+
+it("makes a GET request for todo items", function () {
+  sinon.replace(jQuery, "ajax", sinon.fake());
+
+  getTodos(42, sinon.fake());
+
+  assert(jQuery.ajax.calledWithMatch({ url: "/todo/42/items" }));
+});
+var clock;
+
+before(function () {
+  clock = sinon.useFakeTimers();
+});
+after(function () {
+  clock.restore();
+});
+
+it("calls callback after 100ms", function () {
+  var callback = sinon.fake();
+  var throttled = debounce(callback);
+
+  throttled();
+
+  clock.tick(99);
+  assert(callback.notCalled);
+
+  clock.tick(1);
+  assert(callback.calledOnce);
+
+  // Also:
+  // assert.equals(new Date().getTime(), 100);
+});
+  </script> -->
+</body>
+</html>
